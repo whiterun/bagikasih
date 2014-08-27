@@ -1,0 +1,184 @@
+@import "bootstrap.less";
+
+.profile-title {
+	h3 {margin-top: 0; margin-bottom: 10px; line-height: 30px;}
+
+}
+
+.detail-boxes > .form-horizontal > .control-group:last-child {margin-bottom: 5px;}
+
+.detail-boxes,
+.detail-boxes-left {
+
+	.border-radius(6px);
+	padding: 10px;
+	border-color: darken(@grayLighter, 15%);
+
+	table {
+		margin-bottom: 0;
+	}
+
+}
+
+.detail-boxes {
+
+	.control-label {
+		width: 100px;
+	}
+
+	.controls {
+		margin-left: 120px;
+	}
+
+	.form-horizontal {
+		margin-bottom: 0;
+	}
+
+	&.member {
+
+		td {
+			vertical-align: middle;
+		}
+	}
+
+	&.volunteer {
+
+		blockquote {background: lighten(@grayLighter, 3%); margin-bottom: 5px;}
+	}
+
+	&.recent-update,
+	&.fundraiser {
+		padding: 0;
+
+		.subtitle {margin:0;}
+
+		.media {margin: 10px 15px 0;}
+
+		td {
+
+			padding: 8px 15px;
+
+			h4,p {margin: 0;}
+		}
+	}
+
+	&.fundraiser{
+
+	}
+}
+
+
+
+.subtitle {
+	#gradient > .vertical(lighten(@grayLighter, 3%), @grayLighter);
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+	margin: -9px -9px 8px;
+	color: @gray;
+	padding: 8px 10px;
+	border-bottom: 1px solid darken(@grayLighter, 5%);
+	.box-shadow(inset 0 -1px @white);
+
+	&:first-child {.border-top-radius(5px);}
+}
+
+
+.detail-boxes-left {
+
+	&.donasi {
+		padding:0;
+
+		.subtitle {
+			margin: 0 0 5px;
+		}
+
+		td {
+
+			h4 {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.comment-donator {
+	border: 1px solid @grayLighter;
+	.box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.08));
+	background: lighten(@grayLighter, 4%);
+	.border-radius(8px);
+	font: italic 11px/20px @serifFontFamily;
+	padding: 8px;
+	color: @gray;
+	margin: 8px 0 0;
+}
+
+
+.arrow-right:after {
+    border-left: 14px solid transparent;
+    border-bottom: 15px solid lighten(@grayLighter, 4%);;
+    border-right: 14px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    left: -14px;
+    position: absolute;
+    top: 1px;
+    width: 0;
+}
+.arrow-right {
+    border-left: 15px solid transparent;
+    border-bottom: 16px solid #DDDDDD;
+    border-right: 15px solid transparent;
+    display: block;
+    height: 0;
+    right: 10px;
+    position: absolute;
+    top: -14px;
+    width: 0;
+}
+
+.fundraiser-profile {
+
+	.thumbnail > .row-fluid {
+
+		.span7{
+
+			padding: 10px 0;
+
+			span {font:bold italic 13px @sansFontFamily;}
+
+			h4 { margin:0;}
+			}
+
+		.span5 > img {margin:5px;}
+
+	}
+
+	.lead {
+		margin:2px 8px 0;
+		font: normal 14px/20px @sansFontFamily;
+
+		a { margin: 0 8px;}
+	}
+
+	.bottom-section {
+		.input-append > a {color: @white;}
+		#gradient > .vertical(lighten(@grayLighter, 4%), @grayLighter);
+		border-top: 1px solid @grayLighter;
+		.box-shadow(inset 0 1px @white);
+		margin: 10px -4px -4px;
+		padding: 10px 8px;
+	}
+}
+
+.statistik {
+	#gradient > .vertical(lighten(spin(@bkRed,5), 55%), lighten(spin(@bkRed,5), 45%));
+	color: @grayDark;
+
+	h2 {
+		margin: 5px 0 0;
+
+		&:first-child {margin-top: 0;}
+	}
+
+	span {color:@gray; font-size: 14px; font-weight: bold;}
+}
