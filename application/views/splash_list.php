@@ -25,7 +25,7 @@
 	$sort = 'id_lsm '.$data['sort'];
 	$list = OLsmList::get_list(0, 0, $sort, $wher2);
 	foreach($list as $row) {
-		if($row->image != '')
+		if(file_exists(base_url('assets/images/'.$row->image)))
 		{
 			$img = base_url('assets/images/'.$row->image);
 		} else {
