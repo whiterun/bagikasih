@@ -121,6 +121,10 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		
+		// External
+		'TwigBridge\ServiceProvider',
+		'Codesleeve\AssetPipeline\AssetPipelineServiceProvider',
 
 	),
 
@@ -188,6 +192,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		
+		// External
+		'Twig'			=> 'TwigBridge\Facade\Twig',
 
 	),
 

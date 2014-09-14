@@ -15,3 +15,11 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::group(array('prefix' => 'drawbook'), function()
+{
+	Route::get('/', function()
+	{
+		return time();
+	});
+});
