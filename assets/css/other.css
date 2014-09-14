@@ -1,0 +1,179 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+#slides {
+  display: none;
+  *border:1px solid;
+  margin-bottom:10px;
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+.slider .slidesjs-previous {
+  position: absolute;
+  z-index:99;
+  margin: -155px 0 0 -20px;
+  float: left;
+}
+
+.slider .slidesjs-next {
+  position: absolute;
+  z-index:99;
+  margin: -155px 0 0 905px;
+  float: right;
+}
+
+.slidesjs-pagination {
+  margin: -290px 50px 0 0;
+  float: right;
+  list-style: none;
+  z-index: 99;
+  position: relative;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  *background-image: url("../assets/img/pagination.png");
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+.slider a:link,
+.slider a:visited {
+  color: #333
+}
+
+.slider a:hover,
+.slider a:active {
+  color: #9e2020
+}
+		
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+}
+.fileUpload input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	*background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 7px;
+	left: 3px;
+	*color: #99a1a7;
+	color: #ffffff;
+}
+
+.big-checkbox + label {
+	padding: 18px;
+}
+
+.big-checkbox:checked + label:after {
+	font-size: 28px;
+	left: 6px;
+}
+
+#SWFUpload_Console { display:none; position:absolute; z-index:1000; bottom:0; right:10px; }
+#swfupload-control-photo p { margin:10px 5px; font-size:0.9em; }
+#log-photo { margin:0; padding:0; width:500px;}
+#log-photo li { list-style-position:inside; margin:2px; border:1px solid #ccc; padding:10px; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#333; background:#fff; position:relative;}
+#log-photo li .progressbar { border:1px solid #333; height:5px; background:#fff; }
+#log-photo li .progress { background:#999; width:0%; height:5px; }
+#log-photo li p { margin:0; line-height:18px; }
+#log-photo li.success { border:1px solid #339933; background:#ccf9b9; }
+#log-photo li span.cancel { position:absolute; top:5px; right:5px; width:20px; height:20px; background:url("../assets/js/swfupload/cancel.png") no-repeat; cursor:pointer; }
+
+.form_style .full { width:98%; }
+.error{ color:#FF0000 }
+
+.tbl_separate{}
+.tbl_separate tr{ vertical-align:top; }
+.tbl_separate tr td{ padding:5px; vertical-align:top; }
+
+.image_list{ list-style:none; float:left; }
+.image_list li{ float:left; margin: 0 10px 10px 0; }
+
+.i-thumb { float:left; margin:3px; }
+.i-thumb, i-thumb img { position:relative; }
+.cl-fav { top:5px; right:5px; position:absolute; }
+
+#pan { margin: 0 auto; }
+	
+.pin {
+	-moz-column-count: 4;
+	-moz-column-gap: 5px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 5px;
+	column-count: 4;
+	column-gap: 5px;
+	margin-left:5px;
+}
+ 
+.pin li {
+	display: inline-block;
+	margin-bottom: 0px;
+	width:210px;
+}
+
+.red {color:#ed1848;}.green{color:#468847;}.blue{color:#08c;}.orange{color:#c09853;}

@@ -1,0 +1,99 @@
+// custom css
+body {
+	background: url(assets/img/bg_pattern.jpg);
+}
+
+.top-section, .bottom-section {
+	background: #171209;
+	padding: 10px 0;
+	color: @grayLight;
+	font-size: 12px;
+	.span8 > ul {
+		margin-top: 5px;
+		margin-bottom: -5px;
+	}
+	a {
+		text-decoration: none;
+		color: @grayLight;
+	}
+
+	a:hover {
+		color: @linkColor;
+	}
+
+	a:focus {
+		color: @linkColorHover;
+	}
+}
+
+.header-wrap {
+	background: url(assets/img/header_bg.jpg) repeat-x orange;
+	height: 535px;
+	border-bottom: 6px #ae742e solid;
+
+	.logo {
+		margin: 25px 5px;
+	}
+
+	.header-socmed {
+		margin-top: 40px;
+	}
+
+	.the-show {
+		height: 340px;
+		margin-bottom: 3px;
+	}
+
+}
+
+.visitor-control {
+	padding-top: 5px;
+	color: @white;
+	text-shadow: 0 -1px 0 #e88915;
+
+	a {
+		color: @white;
+	}
+}
+
+.sidebar-title {
+	min-height: 30px;
+	margin: -4px -4px 5px;
+	padding-left:  20px;
+	padding-right: 20px;
+	#gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+	border-bottom: 2px solid @navbarBorder;
+	.border-radius(@baseBorderRadius @baseBorderRadius 0 0);
+}
+
+.facebook-connect {
+	background: url(assets/img/facebook_connect_bg.jpg) no-repeat #fff center;
+	height: 100px;
+	vertical-align: middle;
+	img {
+		margin-top: 25px; 
+	}
+}
+
+
+
+
+// variables
+@import "less/variables.less";
+@import "less/mixins.less";
+
+// wells
+@import "less/wells.less";
+
+// header showcase
+@import "less/showcase.less";
+
+// sidebar
+@import "less/sidebar.less";
+
+// content
+@import "less/content.less";
+
+// footer
+@import "less/footer.less";
+
