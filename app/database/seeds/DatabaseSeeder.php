@@ -2,6 +2,14 @@
 
 class DatabaseSeeder extends Seeder {
 
+	protected $seeds = array(
+		'CountriesTableSeeder',
+		'CitiesTableSeeder',
+		'EventCategoriesSeeder',
+		'SocialActionCategoriesSeeder',
+		'SocialTargetCategoriesSeeder',
+	);
+
 	/**
 	 * Run the database seeds.
 	 *
@@ -11,7 +19,9 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-		// $this->call('UserTableSeeder');
+		foreach($this->seeds as $seed) {
+			$this->command->info('Seeding : '.$seed);
+			$this->call($seed);
+		}
 	}
-
 }
